@@ -1,0 +1,81 @@
+.main {
+   width: 100%;
+}
+.main .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 2%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+  align-items: center;
+}
+
+.main .lista {
+  width: 100%;
+  max-width: 800px;
+  background: rgb(26, 72, 170);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-direction: column;
+}
+.main .container .lista li {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .container .lista li button {
+  border: 0;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .4s;
+  background-color: rgb(30, 22, 141);
+  color: white;
+  font-family: sans-serif;
+}
+
+.main .container .lista li button:hover {
+  background-color: rgb(48, 240, 112);
+  color: rgb(7, 3, 70);
+}
+
+.cadastrar {
+  width: 100%;
+}
+.cadastrar .container {
+  padding: 15px 2%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastrar .container h1{
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-size: 30px;
+}
+
+
+
+
+/* inicio media queryes */
+
+@media screen and (max-width: 500px) {
+  .main .container .lista li{
+    flex-direction: column;
+  }
+  .main .container .lista li button{
+    margin-top: 15px;
+  }
+}
